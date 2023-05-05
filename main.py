@@ -3,6 +3,7 @@ import os
 from crawler import crawler
 from discord.ext import commands, tasks
 from keep_alive import keep_alive
+from replit import db
 
 
 id = "輸入你需要的id"
@@ -52,6 +53,9 @@ async def wishlist():
 
 try:
     keep_alive()
+    #del db['old_list']
+    #db['old_list'] = []
+    #print(db['old_list'])
     client.run(TOKEN)
 except:
     os.system("kill 1")
