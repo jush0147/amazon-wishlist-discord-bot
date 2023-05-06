@@ -53,9 +53,9 @@ async def wishlist():
 
 try:
     keep_alive()
-    #del db['old_list']
+
     #db['old_list'] = []
-    #print(db['old_list'])
+
     client.run(TOKEN)
 except:
     os.system("kill 1")
