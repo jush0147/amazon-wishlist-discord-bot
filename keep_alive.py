@@ -43,7 +43,7 @@ def keep_alive() -> None:
     """ Wraps the web server run() method in a Thread object and starts the web server. """
     def run() -> None:
         log.setLevel(logging.ERROR)
-        flask.run(host = '0.0.0.0', port = 8080)
+        flask.run(host = '0.0.0.0', port = random.randint(2000, 9000))
     thread = Thread(target = run)
     thread.start()
 
