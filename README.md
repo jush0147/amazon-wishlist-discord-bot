@@ -1,4 +1,4 @@
-# Discord Bot 串接爬蟲 (以Amazon Wishlist為例)
+# HOW TO USE
 ---
 需要準備帳號:
 * [Discord](https://discord.com/)
